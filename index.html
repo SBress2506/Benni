@@ -9,9 +9,7 @@
 </head>
 <body>
 
-  <!-- ============================================================
-       NAVIGATION
-       ============================================================ -->
+  <!-- NAV -->
   <nav class="nav" id="nav" role="navigation" aria-label="Hauptnavigation">
     <div class="nav__inner">
       <a href="#" class="nav__logo" aria-label="AutoSchutz Startseite">
@@ -24,7 +22,6 @@
         </div>
         <span class="nav__logo-text">Auto<span>Schutz</span></span>
       </a>
-
       <ul class="nav__links" id="navLinks" role="list">
         <li><a href="#produkte" class="nav__link">Produkte</a></li>
         <li><a href="#tarife" class="nav__link">Tarife</a></li>
@@ -32,62 +29,39 @@
         <li><a href="#ueber-uns" class="nav__link">Über uns</a></li>
         <li><a href="#kontakt" class="nav__link">Kontakt</a></li>
       </ul>
-
       <a href="#" class="nav__cta" id="navCta" onclick="openModal(event)">Jetzt berechnen</a>
-
       <button class="hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navLinks">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
-  <!-- ============================================================
-       HERO SECTION
-       ============================================================ -->
+  <!-- HERO -->
   <section class="hero" id="hero" aria-label="Willkommensbereich">
     <div class="hero__bg" aria-hidden="true">
       <div class="hero__bg-shape1"></div>
       <div class="hero__bg-shape2"></div>
       <div class="hero__bg-lines"></div>
     </div>
-
     <div class="hero__content">
       <div class="container">
         <div class="hero__inner">
-          <!-- Left: Text -->
           <div class="hero__text">
             <div class="hero__badge">
               <div class="hero__badge-dot"></div>
               <span class="hero__badge-text">Deutschlands digitale Kfz-Versicherung</span>
             </div>
-
-            <h1 class="hero__headline">
-              Ihr Auto.<br/>
-              <em>Unser Schutz.</em>
-            </h1>
-
-            <p class="hero__subtext">
-              Verlassen Sie sich auf umfassenden Versicherungsschutz, faire Preise und schnelle Schadensabwicklung. Berechnen Sie Ihren Beitrag in nur 2 Minuten.
-            </p>
-
+            <h1 class="hero__headline">Ihr Auto.<br/><em>Unser Schutz.</em></h1>
+            <p class="hero__subtext">Verlassen Sie sich auf umfassenden Versicherungsschutz, faire Preise und schnelle Schadensabwicklung. Berechnen Sie Ihren Beitrag in nur 2 Minuten.</p>
             <div class="hero__actions">
               <button class="btn btn-primary btn-lg" onclick="openModal(event)">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <circle cx="12" cy="12" r="10"/>
-                  <path d="M12 8v4l3 3"/>
-                </svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
                 Jetzt berechnen
               </button>
-              <a href="#produkte" class="btn btn-outline">
-                Mehr erfahren
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M5 12h14M12 5l7 7-7 7"/>
-                </svg>
+              <a href="#produkte" class="btn btn-outline">Mehr erfahren
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </a>
             </div>
-
             <div class="hero__stats">
               <div class="hero__stat">
                 <div class="hero__stat-number">850<span>k+</span></div>
@@ -103,83 +77,37 @@
               </div>
             </div>
           </div>
-
-          <!-- Right: Visual Card -->
           <div class="hero__visual" aria-hidden="true">
             <div class="hero__card-stack">
-              <!-- Mini card top left -->
               <div class="hero__float-mini hero__float-mini--tl">
                 <div class="hero__float-mini-icon hero__float-mini-icon--green">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M20 6L9 17l-5-5"/>
-                  </svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
                 </div>
                 <div>
                   <div class="hero__float-mini-value">Aktiviert</div>
                   <div class="hero__float-mini-label">Vollkaskoschutz</div>
                 </div>
               </div>
-
-              <!-- Main card -->
               <div class="hero__float-card">
                 <div class="hero__float-card-header">
                   <span class="hero__float-card-title">Mein Schutzpaket</span>
                   <span class="hero__float-card-badge">Vollkasko</span>
                 </div>
-
                 <div class="hero__price-display">
                   <div class="hero__price-label">Monatlicher Beitrag</div>
-                  <div class="hero__price-value">
-                    <sup>€</sup>47<sub>,90/Mo.</sub>
-                  </div>
+                  <div class="hero__price-value"><sup>€</sup>47<sub>,90/Mo.</sub></div>
                 </div>
-
                 <ul class="hero__coverage-list">
-                  <li class="hero__coverage-item">
-                    <span class="hero__coverage-check">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M20 6L9 17l-5-5"/>
-                      </svg>
-                    </span>
-                    Haftpflichtschutz unbegrenzt
-                  </li>
-                  <li class="hero__coverage-item">
-                    <span class="hero__coverage-check">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M20 6L9 17l-5-5"/>
-                      </svg>
-                    </span>
-                    Diebstahl & Glasschäden
-                  </li>
-                  <li class="hero__coverage-item">
-                    <span class="hero__coverage-check">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M20 6L9 17l-5-5"/>
-                      </svg>
-                    </span>
-                    Unfallschäden am eigenen Fahrzeug
-                  </li>
-                  <li class="hero__coverage-item">
-                    <span class="hero__coverage-check">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M20 6L9 17l-5-5"/>
-                      </svg>
-                    </span>
-                    24/7 Pannenhilfe europaweit
-                  </li>
+                  <li class="hero__coverage-item"><span class="hero__coverage-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Haftpflichtschutz unbegrenzt</li>
+                  <li class="hero__coverage-item"><span class="hero__coverage-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Diebstahl &amp; Glasschäden</li>
+                  <li class="hero__coverage-item"><span class="hero__coverage-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Unfallschäden am eigenen Fahrzeug</li>
+                  <li class="hero__coverage-item"><span class="hero__coverage-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>24/7 Pannenhilfe europaweit</li>
                 </ul>
-
-                <button class="btn btn-primary" style="width:100%; justify-content:center;" onclick="openModal(event)">
-                  Meinen Beitrag berechnen
-                </button>
+                <button class="btn btn-primary" style="width:100%; justify-content:center;" onclick="openModal(event)">Meinen Beitrag berechnen</button>
               </div>
-
-              <!-- Mini card bottom right -->
               <div class="hero__float-mini hero__float-mini--br">
                 <div class="hero__float-mini-icon hero__float-mini-icon--blue">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                  </svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                 </div>
                 <div>
                   <div class="hero__float-mini-value">100 % digital</div>
@@ -191,62 +119,26 @@
         </div>
       </div>
     </div>
-
-    <!-- Scroll hint -->
     <div class="hero__scroll-hint" aria-hidden="true">
       <span class="hero__scroll-text">Mehr</span>
       <div class="hero__scroll-line"></div>
     </div>
   </section>
 
-  <!-- ============================================================
-       TRUST BAR
-       ============================================================ -->
+  <!-- TRUST BAR -->
   <div class="trust-bar" aria-label="Vertrauenssignale">
     <div class="container">
       <div class="trust-bar__inner">
-        <div class="trust-bar__item">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-          </svg>
-          BaFin-reguliert
-        </div>
-        <div class="trust-bar__item">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-          </svg>
-          Testsieger 2024
-        </div>
-        <div class="trust-bar__item">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
-          </svg>
-          SSL-verschlüsselt
-        </div>
-        <div class="trust-bar__item">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="12" cy="12" r="10"/>
-            <polyline points="12 6 12 12 16 14"/>
-          </svg>
-          Abschluss in 2 Minuten
-        </div>
-        <div class="trust-bar__item">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-            <circle cx="9" cy="7" r="4"/>
-            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-          </svg>
-          850.000+ Kunden
-        </div>
+        <div class="trust-bar__item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>BaFin-reguliert</div>
+        <div class="trust-bar__item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>Testsieger 2024</div>
+        <div class="trust-bar__item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>SSL-verschlüsselt</div>
+        <div class="trust-bar__item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Abschluss in 2 Minuten</div>
+        <div class="trust-bar__item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>850.000+ Kunden</div>
       </div>
     </div>
   </div>
 
-  <!-- ============================================================
-       PRODUCTS SECTION
-       ============================================================ -->
+  <!-- PRODUCTS -->
   <section class="products section-padding" id="produkte" aria-labelledby="products-heading">
     <div class="container">
       <div class="section-header text-center fade-in">
@@ -254,183 +146,66 @@
         <h2 class="text-h2" id="products-heading">Der richtige Schutz<br/>für Ihr Fahrzeug</h2>
         <p>Von der gesetzlichen Pflichtversicherung bis zum umfassenden Vollkaskoschutz – wir bieten Ihnen genau das, was Sie brauchen.</p>
       </div>
-
       <div class="products__grid">
-        <!-- Haftpflicht -->
         <article class="product-card fade-in fade-in-delay-1">
           <div class="product-card__header">
-            <div class="product-card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-              </svg>
-            </div>
+            <div class="product-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
             <h3 class="product-card__title">Kfz-Haftpflicht</h3>
             <p class="product-card__subtitle">Gesetzlich vorgeschrieben</p>
           </div>
           <div class="product-card__body">
-            <p class="product-card__desc">
-              Die Kfz-Haftpflichtversicherung ist Pflicht und schützt Sie vor den finanziellen Folgen, wenn Sie anderen einen Schaden zufügen.
-            </p>
-            <ul class="product-card__features" aria-label="Leistungsumfang">
-              <li class="product-card__feature">
-                <span class="product-card__feature-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-                </span>
-                Personenschäden bis 15 Mio. €
-              </li>
-              <li class="product-card__feature">
-                <span class="product-card__feature-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-                </span>
-                Sachschäden bis 100 Mio. €
-              </li>
-              <li class="product-card__feature">
-                <span class="product-card__feature-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-                </span>
-                Schutz im europäischen Ausland
-              </li>
-              <li class="product-card__feature">
-                <span class="product-card__feature-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-                </span>
-                Kein Selbstbehalt
-              </li>
+            <p class="product-card__desc">Die Kfz-Haftpflichtversicherung ist Pflicht und schützt Sie vor den finanziellen Folgen, wenn Sie anderen einen Schaden zufügen.</p>
+            <ul class="product-card__features">
+              <li class="product-card__feature"><span class="product-card__feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Personenschäden bis 15 Mio. €</li>
+              <li class="product-card__feature"><span class="product-card__feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Sachschäden bis 100 Mio. €</li>
+              <li class="product-card__feature"><span class="product-card__feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Schutz im europäischen Ausland</li>
+              <li class="product-card__feature"><span class="product-card__feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Kein Selbstbehalt</li>
             </ul>
             <div class="product-card__footer">
-              <div>
-                <span class="product-card__price-from">ab</span>
-                <div class="product-card__price">€ 5,90 <span>/ Monat</span></div>
-              </div>
-              <a href="#" class="product-card__link" onclick="openModal(event)">
-                Berechnen
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M5 12h14M12 5l7 7-7 7"/>
-                </svg>
-              </a>
+              <div><span class="product-card__price-from">ab</span><div class="product-card__price">€ 5,90 <span>/ Monat</span></div></div>
+              <a href="#" class="product-card__link" onclick="openModal(event)">Berechnen<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
             </div>
           </div>
         </article>
-
-        <!-- Teilkasko -->
         <article class="product-card fade-in fade-in-delay-2">
           <div class="product-card__header">
-            <div class="product-card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                <polyline points="9 22 9 12 15 12 15 22"/>
-              </svg>
-            </div>
+            <div class="product-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
             <h3 class="product-card__title">Teilkasko</h3>
             <p class="product-card__subtitle">Erweiterter Schutz</p>
           </div>
           <div class="product-card__body">
-            <p class="product-card__desc">
-              Die Teilkaskoversicherung schützt Ihr Fahrzeug vor Schäden durch Naturgewalten, Diebstahl, Glasbruch und weitere unvorhersehbare Ereignisse.
-            </p>
-            <ul class="product-card__features" aria-label="Leistungsumfang">
-              <li class="product-card__feature">
-                <span class="product-card__feature-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-                </span>
-                Diebstahl & Einbruch
-              </li>
-              <li class="product-card__feature">
-                <span class="product-card__feature-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-                </span>
-                Sturm, Hagel & Überschwemmung
-              </li>
-              <li class="product-card__feature">
-                <span class="product-card__feature-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-                </span>
-                Glasschäden inkl. Scheiben
-              </li>
-              <li class="product-card__feature">
-                <span class="product-card__feature-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-                </span>
-                Wildtierkollisionen
-              </li>
+            <p class="product-card__desc">Die Teilkaskoversicherung schützt Ihr Fahrzeug vor Schäden durch Naturgewalten, Diebstahl, Glasbruch und weitere unvorhersehbare Ereignisse.</p>
+            <ul class="product-card__features">
+              <li class="product-card__feature"><span class="product-card__feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Diebstahl &amp; Einbruch</li>
+              <li class="product-card__feature"><span class="product-card__feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Sturm, Hagel &amp; Überschwemmung</li>
+              <li class="product-card__feature"><span class="product-card__feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Glasschäden inkl. Scheiben</li>
+              <li class="product-card__feature"><span class="product-card__feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Wildtierkollisionen</li>
             </ul>
             <div class="product-card__footer">
-              <div>
-                <span class="product-card__price-from">ab</span>
-                <div class="product-card__price">€ 18,50 <span>/ Monat</span></div>
-              </div>
-              <a href="#" class="product-card__link" onclick="openModal(event)">
-                Berechnen
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M5 12h14M12 5l7 7-7 7"/>
-                </svg>
-              </a>
+              <div><span class="product-card__price-from">ab</span><div class="product-card__price">€ 18,50 <span>/ Monat</span></div></div>
+              <a href="#" class="product-card__link" onclick="openModal(event)">Berechnen<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
             </div>
           </div>
         </article>
-
-        <!-- Vollkasko -->
         <article class="product-card product-card--featured fade-in fade-in-delay-3">
           <div class="product-card__ribbon" aria-label="Empfohlen">Empfohlen</div>
           <div class="product-card__header">
-            <div class="product-card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="12" cy="12" r="10"/>
-                <path d="M12 8v4l3 3"/>
-                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
-                <line x1="12" y1="17" x2="12.01" y2="17"/>
-              </svg>
-            </div>
+            <div class="product-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
             <h3 class="product-card__title">Vollkasko</h3>
             <p class="product-card__subtitle">Rundum-Sorglos-Paket</p>
           </div>
           <div class="product-card__body">
-            <p class="product-card__desc">
-              Die Vollkaskoversicherung bietet den umfassendsten Schutz – auch bei selbstverschuldeten Unfällen und Vandalismus an Ihrem Fahrzeug.
-            </p>
-            <ul class="product-card__features" aria-label="Leistungsumfang">
-              <li class="product-card__feature">
-                <span class="product-card__feature-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-                </span>
-                Alle Teilkaskoleistungen inklusive
-              </li>
-              <li class="product-card__feature">
-                <span class="product-card__feature-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-                </span>
-                Selbstverschuldete Unfälle
-              </li>
-              <li class="product-card__feature">
-                <span class="product-card__feature-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-                </span>
-                Vandalismus & Fremdschäden
-              </li>
-              <li class="product-card__feature">
-                <span class="product-card__feature-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-                </span>
-                24/7 Pannenhilfe europaweit
-              </li>
-              <li class="product-card__feature">
-                <span class="product-card__feature-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-                </span>
-                Mietwagen bei Totalschaden
-              </li>
+            <p class="product-card__desc">Die Vollkaskoversicherung bietet den umfassendsten Schutz – auch bei selbstverschuldeten Unfällen und Vandalismus an Ihrem Fahrzeug.</p>
+            <ul class="product-card__features">
+              <li class="product-card__feature"><span class="product-card__feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Alle Teilkaskoleistungen inklusive</li>
+              <li class="product-card__feature"><span class="product-card__feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Selbstverschuldete Unfälle</li>
+              <li class="product-card__feature"><span class="product-card__feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Vandalismus &amp; Fremdschäden</li>
+              <li class="product-card__feature"><span class="product-card__feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>24/7 Pannenhilfe europaweit</li>
+              <li class="product-card__feature"><span class="product-card__feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Mietwagen bei Totalschaden</li>
             </ul>
             <div class="product-card__footer">
-              <div>
-                <span class="product-card__price-from">ab</span>
-                <div class="product-card__price">€ 34,90 <span>/ Monat</span></div>
-              </div>
-              <a href="#" class="product-card__link" onclick="openModal(event)">
-                Berechnen
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M5 12h14M12 5l7 7-7 7"/>
-                </svg>
-              </a>
+              <div><span class="product-card__price-from">ab</span><div class="product-card__price">€ 34,90 <span>/ Monat</span></div></div>
+              <a href="#" class="product-card__link" onclick="openModal(event)">Berechnen<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
             </div>
           </div>
         </article>
@@ -438,9 +213,7 @@
     </div>
   </section>
 
-  <!-- ============================================================
-       WHY AUTOSCHUTZ
-       ============================================================ -->
+  <!-- WHY US -->
   <section class="why-us section-padding" id="ueber-uns" aria-labelledby="why-heading">
     <div class="container">
       <div class="section-header text-center fade-in">
@@ -448,90 +221,44 @@
         <h2 class="text-h2" id="why-heading">Versicherung,<br/>die wirklich funktioniert</h2>
         <p>Wir haben die Kfz-Versicherung neu gedacht – für Sie als moderne Kundin und modernen Kunden.</p>
       </div>
-
       <div class="features-grid">
-        <!-- Feature 1 -->
         <div class="feature-item fade-in fade-in-delay-1">
-          <div class="feature-item__icon-wrap" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-            </svg>
-          </div>
+          <div class="feature-item__icon-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
           <h3 class="feature-item__title">Schnelle Abwicklung</h3>
           <p class="feature-item__text">Schäden melden Sie einfach per App. Unsere Experten bearbeiten Ihren Fall innerhalb von 24 Stunden.</p>
         </div>
-
-        <!-- Feature 2 -->
         <div class="feature-item fade-in fade-in-delay-2">
-          <div class="feature-item__icon-wrap" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-            </svg>
-          </div>
+          <div class="feature-item__icon-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
           <h3 class="feature-item__title">24/7 Support</h3>
-          <p class="feature-item__text">Rund um die Uhr erreichbar – ob telefonisch, per Chat oder E-Mail. Wir sind immer für Sie da, wenn Sie uns brauchen.</p>
+          <p class="feature-item__text">Rund um die Uhr erreichbar – ob telefonisch, per Chat oder E-Mail. Wir sind immer für Sie da.</p>
         </div>
-
-        <!-- Feature 3 -->
         <div class="feature-item fade-in fade-in-delay-3">
-          <div class="feature-item__icon-wrap" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="12" y1="1" x2="12" y2="23"/>
-              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-            </svg>
-          </div>
+          <div class="feature-item__icon-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
           <h3 class="feature-item__title">Faire Preise</h3>
           <p class="feature-item__text">Transparente Beiträge ohne versteckte Kosten. Mit unserem Treuerabatt sparen Sie ab dem zweiten Jahr automatisch mehr.</p>
         </div>
-
-        <!-- Feature 4 -->
         <div class="feature-item fade-in fade-in-delay-4">
-          <div class="feature-item__icon-wrap" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
-              <line x1="12" y1="18" x2="12.01" y2="18"/>
-            </svg>
-          </div>
+          <div class="feature-item__icon-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
           <h3 class="feature-item__title">Digitale Services</h3>
-          <p class="feature-item__text">Verwalten Sie Ihren Vertrag vollständig online – Schäden melden, Dokumente abrufen, Tarif anpassen. Alles in Ihrer Hand.</p>
+          <p class="feature-item__text">Verwalten Sie Ihren Vertrag vollständig online – Schäden melden, Dokumente abrufen, Tarif anpassen.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============================================================
-       NUMBERS SECTION
-       ============================================================ -->
+  <!-- NUMBERS -->
   <section class="numbers" id="tarife" aria-label="Kennzahlen">
     <div class="container">
       <div class="numbers__grid">
-        <div class="number-item fade-in">
-          <div class="number-item__value">850<span>k</span></div>
-          <div class="number-item__divider" aria-hidden="true"></div>
-          <div class="number-item__label">Versicherte Fahrzeuge</div>
-        </div>
-        <div class="number-item fade-in fade-in-delay-1">
-          <div class="number-item__value">98<span>%</span></div>
-          <div class="number-item__divider" aria-hidden="true"></div>
-          <div class="number-item__label">Kundenzufriedenheit</div>
-        </div>
-        <div class="number-item fade-in fade-in-delay-2">
-          <div class="number-item__value"><span>&lt;</span>24<span>h</span></div>
-          <div class="number-item__divider" aria-hidden="true"></div>
-          <div class="number-item__label">Durchschnittliche Bearbeitungszeit</div>
-        </div>
-        <div class="number-item fade-in fade-in-delay-3">
-          <div class="number-item__value">15<span>+</span></div>
-          <div class="number-item__divider" aria-hidden="true"></div>
-          <div class="number-item__label">Jahre Erfahrung</div>
-        </div>
+        <div class="number-item fade-in"><div class="number-item__value">850<span>k</span></div><div class="number-item__divider"></div><div class="number-item__label">Versicherte Fahrzeuge</div></div>
+        <div class="number-item fade-in fade-in-delay-1"><div class="number-item__value">98<span>%</span></div><div class="number-item__divider"></div><div class="number-item__label">Kundenzufriedenheit</div></div>
+        <div class="number-item fade-in fade-in-delay-2"><div class="number-item__value">24<span>h</span></div><div class="number-item__divider"></div><div class="number-item__label">Durchschnittliche Bearbeitungszeit</div></div>
+        <div class="number-item fade-in fade-in-delay-3"><div class="number-item__value">15<span>+</span></div><div class="number-item__divider"></div><div class="number-item__label">Jahre Erfahrung</div></div>
       </div>
     </div>
   </section>
 
-  <!-- ============================================================
-       PROCESS SECTION
-       ============================================================ -->
+  <!-- PROCESS -->
   <section class="process section-padding" id="schaden" aria-labelledby="process-heading">
     <div class="container">
       <div class="section-header text-center fade-in">
@@ -539,226 +266,105 @@
         <h2 class="text-h2" id="process-heading">In 4 Schritten<br/>versichert</h2>
         <p>Von der Berechnung bis zum Versicherungsschutz – bei AutoSchutz dauert das keine 10 Minuten.</p>
       </div>
-
       <div class="process__steps">
-        <div class="process-step fade-in fade-in-delay-1">
-          <div class="process-step__number" aria-hidden="true">1</div>
-          <h3 class="process-step__title">Fahrzeugdaten eingeben</h3>
-          <p class="process-step__text">Geben Sie die Daten Ihres Fahrzeugs und Ihren Führerschein ein. Das dauert nur wenige Minuten.</p>
-        </div>
-        <div class="process-step fade-in fade-in-delay-2">
-          <div class="process-step__number" aria-hidden="true">2</div>
-          <h3 class="process-step__title">Tarif wählen</h3>
-          <p class="process-step__text">Wählen Sie aus Haftpflicht, Teilkasko oder Vollkasko – transparent und verständlich erklärt.</p>
-        </div>
-        <div class="process-step fade-in fade-in-delay-3">
-          <div class="process-step__number" aria-hidden="true">3</div>
-          <h3 class="process-step__title">Online abschliessen</h3>
-          <p class="process-step__text">Schliessen Sie Ihre Versicherung sicher und bequem online ab. Keine Unterschrift, kein Papier.</p>
-        </div>
-        <div class="process-step fade-in fade-in-delay-4">
-          <div class="process-step__number" aria-hidden="true">4</div>
-          <h3 class="process-step__title">Sofort versichert</h3>
-          <p class="process-step__text">Sie erhalten Ihre digitale eVB-Nummer sofort. Ab dem Wunschdatum sind Sie versichert.</p>
-        </div>
+        <div class="process-step fade-in fade-in-delay-1"><div class="process-step__number">1</div><h3 class="process-step__title">Fahrzeugdaten eingeben</h3><p class="process-step__text">Geben Sie die Daten Ihres Fahrzeugs ein. Das dauert nur wenige Minuten.</p></div>
+        <div class="process-step fade-in fade-in-delay-2"><div class="process-step__number">2</div><h3 class="process-step__title">Tarif wählen</h3><p class="process-step__text">Wählen Sie aus Haftpflicht, Teilkasko oder Vollkasko – transparent erklärt.</p></div>
+        <div class="process-step fade-in fade-in-delay-3"><div class="process-step__number">3</div><h3 class="process-step__title">Online abschliessen</h3><p class="process-step__text">Schliessen Sie Ihre Versicherung sicher und bequem online ab. Keine Unterschrift.</p></div>
+        <div class="process-step fade-in fade-in-delay-4"><div class="process-step__number">4</div><h3 class="process-step__title">Sofort versichert</h3><p class="process-step__text">Sie erhalten Ihre digitale eVB-Nummer sofort. Ab dem Wunschdatum versichert.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- ============================================================
-       TESTIMONIALS
-       ============================================================ -->
+  <!-- TESTIMONIALS -->
   <section class="testimonials section-padding" aria-labelledby="testimonials-heading">
     <div class="container">
       <div class="section-header text-center fade-in">
         <span class="section-label">Kundenstimmen</span>
         <h2 class="text-h2" id="testimonials-heading">Was unsere Kunden sagen</h2>
-        <p>Über 850.000 zufriedene Kundinnen und Kunden vertrauen AutoSchutz. Das sagen sie über uns.</p>
+        <p>Über 850.000 zufriedene Kundinnen und Kunden vertrauen AutoSchutz.</p>
       </div>
-
       <div class="testimonials__grid">
-        <!-- Testimonial 1 -->
         <article class="testimonial-card fade-in fade-in-delay-1">
-          <div class="testimonial-card__stars" aria-label="5 von 5 Sternen">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          </div>
-          <blockquote class="testimonial-card__quote">
-            Nach einem Wildunfall war ich schockiert – aber AutoSchutz hat alles blitzschnell geregelt. Innerhalb von 24 Stunden hatte ich die Bestätigung und das Auto war innerhalb einer Woche repariert. Absolut empfehlenswert!
-          </blockquote>
-          <div class="testimonial-card__author">
-            <div class="testimonial-card__avatar testimonial-card__avatar--blue" aria-hidden="true">MK</div>
-            <div>
-              <div class="testimonial-card__name">Markus K.</div>
-              <div class="testimonial-card__meta">Vollkasko-Kunde seit 2021 · München</div>
-            </div>
-          </div>
+          <div class="testimonial-card__stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+          <blockquote class="testimonial-card__quote">Nach einem Wildunfall war ich schockiert – aber AutoSchutz hat alles blitzschnell geregelt. Innerhalb von 24 Stunden hatte ich die Bestätigung. Absolut empfehlenswert!</blockquote>
+          <div class="testimonial-card__author"><div class="testimonial-card__avatar testimonial-card__avatar--blue">MK</div><div><div class="testimonial-card__name">Markus K.</div><div class="testimonial-card__meta">Vollkasko-Kunde seit 2021 · München</div></div></div>
         </article>
-
-        <!-- Testimonial 2 -->
         <article class="testimonial-card fade-in fade-in-delay-2">
-          <div class="testimonial-card__stars" aria-label="5 von 5 Sternen">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          </div>
-          <blockquote class="testimonial-card__quote">
-            Der Abschluss online hat gerade mal 5 Minuten gedauert. Kein Papierkram, keine Warteschleife. Der Preis ist fair und der Support antwortet wirklich rund um die Uhr. Ich wechsle nie wieder zur alten Versicherung.
-          </blockquote>
-          <div class="testimonial-card__author">
-            <div class="testimonial-card__avatar testimonial-card__avatar--teal" aria-hidden="true">SL</div>
-            <div>
-              <div class="testimonial-card__name">Sandra L.</div>
-              <div class="testimonial-card__meta">Teilkasko-Kundin seit 2022 · Hamburg</div>
-            </div>
-          </div>
+          <div class="testimonial-card__stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+          <blockquote class="testimonial-card__quote">Der Abschluss online hat gerade mal 5 Minuten gedauert. Kein Papierkram, keine Warteschleife. Der Preis ist fair. Ich wechsle nie wieder zur alten Versicherung.</blockquote>
+          <div class="testimonial-card__author"><div class="testimonial-card__avatar testimonial-card__avatar--teal">SL</div><div><div class="testimonial-card__name">Sandra L.</div><div class="testimonial-card__meta">Teilkasko-Kundin seit 2022 · Hamburg</div></div></div>
         </article>
-
-        <!-- Testimonial 3 -->
         <article class="testimonial-card fade-in fade-in-delay-3">
-          <div class="testimonial-card__stars" aria-label="5 von 5 Sternen">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          </div>
-          <blockquote class="testimonial-card__quote">
-            Als Fahranfänger hatte ich Angst vor hohen Prämien – doch AutoSchutz hat mir ein wirklich faires Angebot gemacht. Der digitale Vertrag ist übersichtlich und ich verstehe genau, was ich versichert habe.
-          </blockquote>
-          <div class="testimonial-card__author">
-            <div class="testimonial-card__avatar testimonial-card__avatar--purple" aria-hidden="true">TH</div>
-            <div>
-              <div class="testimonial-card__name">Thomas H.</div>
-              <div class="testimonial-card__meta">Haftpflicht-Kunde seit 2023 · Berlin</div>
-            </div>
-          </div>
+          <div class="testimonial-card__stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+          <blockquote class="testimonial-card__quote">Als Fahranfänger hatte ich Angst vor hohen Prämien – doch AutoSchutz hat mir ein wirklich faires Angebot gemacht. Ich verstehe genau, was ich versichert habe.</blockquote>
+          <div class="testimonial-card__author"><div class="testimonial-card__avatar testimonial-card__avatar--purple">TH</div><div><div class="testimonial-card__name">Thomas H.</div><div class="testimonial-card__meta">Haftpflicht-Kunde seit 2023 · Berlin</div></div></div>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- ============================================================
-       CTA BANNER
-       ============================================================ -->
+  <!-- CTA BANNER -->
   <section class="cta-banner" aria-label="Versicherung berechnen">
     <div class="container">
       <div class="cta-banner__inner">
         <div class="cta-banner__text fade-in">
           <h2 class="cta-banner__headline">Jetzt Versicherung berechnen</h2>
-          <p class="cta-banner__subtext">Finden Sie in 2 Minuten den passenden Schutz für Ihr Fahrzeug. Ohne Verpflichtung, 100 % kostenlos.</p>
+          <p class="cta-banner__subtext">Finden Sie in 2 Minuten den passenden Schutz. Ohne Verpflichtung, 100 % kostenlos.</p>
         </div>
         <div class="cta-banner__actions fade-in fade-in-delay-1">
-          <button class="btn btn-cta-primary" onclick="openModal(event)">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <circle cx="12" cy="12" r="10"/>
-              <path d="M12 8v4l3 3"/>
-            </svg>
-            Beitrag berechnen
-          </button>
-          <a href="#kontakt" class="btn btn-cta-secondary">
-            Persönlich beraten lassen
-          </a>
+          <button class="btn btn-cta-primary" onclick="openModal(event)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>Beitrag berechnen</button>
+          <a href="#kontakt" class="btn btn-cta-secondary">Persönlich beraten lassen</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============================================================
-       FOOTER
-       ============================================================ -->
+  <!-- FOOTER -->
   <footer class="footer" id="kontakt" role="contentinfo">
     <div class="container">
       <div class="footer__top">
-        <!-- Brand Column -->
         <div class="footer__brand">
           <div class="footer__logo">
-            <div class="nav__logo-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 2L3 7v10l9 5 9-5V7L12 2z" fill="#001e50" stroke="#001e50" stroke-width="0.5"/>
-                <path d="M12 6l-5 2.8v5.4L12 17l5-2.8V8.8L12 6z" fill="none" stroke="white" stroke-width="1.2"/>
-                <circle cx="12" cy="12" r="2" fill="white"/>
-              </svg>
-            </div>
+            <div class="nav__logo-icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L3 7v10l9 5 9-5V7L12 2z" fill="#001e50" stroke="#001e50" stroke-width="0.5"/><path d="M12 6l-5 2.8v5.4L12 17l5-2.8V8.8L12 6z" fill="none" stroke="white" stroke-width="1.2"/><circle cx="12" cy="12" r="2" fill="white"/></svg></div>
             <span class="footer__logo-text">Auto<span>Schutz</span></span>
           </div>
-          <p class="footer__tagline">
-            Moderne Kfz-Versicherung für alle, die das Beste für ihr Fahrzeug wollen. Digital, fair und immer für Sie da.
-          </p>
-          <nav class="footer__social" aria-label="Social Media">
-            <a href="#" class="footer__social-link" aria-label="Facebook">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-            </a>
-            <a href="#" class="footer__social-link" aria-label="Instagram">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            </a>
-            <a href="#" class="footer__social-link" aria-label="Twitter / X">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-            </a>
-            <a href="#" class="footer__social-link" aria-label="LinkedIn">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-            </a>
-            <a href="#" class="footer__social-link" aria-label="YouTube">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.41 19.1C5.12 19.56 12 19.56 12 19.56s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor"/></svg>
-            </a>
+          <p class="footer__tagline">Moderne Kfz-Versicherung für alle, die das Beste für ihr Fahrzeug wollen. Digital, fair und immer für Sie da.</p>
+          <nav class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" class="footer__social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
           </nav>
         </div>
-
-        <!-- Produkte Column -->
         <div class="footer__col">
           <h3 class="footer__col-title">Produkte</h3>
-          <ul class="footer__links" role="list">
+          <ul class="footer__links">
             <li><a href="#produkte" class="footer__link">Kfz-Haftpflicht</a></li>
             <li><a href="#produkte" class="footer__link">Teilkaskoversicherung</a></li>
             <li><a href="#produkte" class="footer__link">Vollkaskoversicherung</a></li>
             <li><a href="#" class="footer__link">Pannenhilfe</a></li>
-            <li><a href="#" class="footer__link">Schutzbrief</a></li>
             <li><a href="#" class="footer__link">Fahrerschutz</a></li>
           </ul>
         </div>
-
-        <!-- Service Column -->
         <div class="footer__col">
           <h3 class="footer__col-title">Service</h3>
-          <ul class="footer__links" role="list">
+          <ul class="footer__links">
             <li><a href="#schaden" class="footer__link">Schaden melden</a></li>
             <li><a href="#" class="footer__link">Mein Konto</a></li>
             <li><a href="#" class="footer__link">eVB-Nummer</a></li>
-            <li><a href="#" class="footer__link">Kündigung</a></li>
             <li><a href="#" class="footer__link">FAQ</a></li>
             <li><a href="#" class="footer__link">Downloads</a></li>
           </ul>
         </div>
-
-        <!-- Kontakt Column -->
         <div class="footer__col">
           <h3 class="footer__col-title">Kontakt</h3>
-          <div class="footer__contact-item">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.27 12 19.79 19.79 0 0 1 1.2 3.37 2 2 0 0 1 3.18 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <span>0800 123 456 7<br/><small style="opacity:.7">Mo–Fr 8:00–20:00 Uhr</small></span>
-          </div>
-          <div class="footer__contact-item">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <span>service@autoschutz.de</span>
-          </div>
-          <div class="footer__contact-item">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <span>AutoSchutz GmbH<br/>Versicherungsstr. 1<br/>10115 Berlin</span>
-          </div>
+          <div class="footer__contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.27 12 19.79 19.79 0 0 1 1.2 3.37 2 2 0 0 1 3.18 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>0800 123 456 7<br/><small>Mo–Fr 8:00–20:00 Uhr</small></span></div>
+          <div class="footer__contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>service@autoschutz.de</span></div>
+          <div class="footer__contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>AutoSchutz GmbH<br/>Versicherungsstr. 1<br/>10115 Berlin</span></div>
         </div>
       </div>
-
-      <!-- Footer Bottom -->
       <div class="footer__bottom">
-        <p class="footer__copyright">
-          &copy; 2024 AutoSchutz GmbH. Alle Rechte vorbehalten.
-        </p>
-        <nav class="footer__bottom-links" aria-label="Rechtliches">
+        <p class="footer__copyright">&copy; 2024 AutoSchutz GmbH. Alle Rechte vorbehalten.</p>
+        <nav class="footer__bottom-links">
           <a href="#" class="footer__bottom-link">Impressum</a>
           <a href="#" class="footer__bottom-link">Datenschutz</a>
           <a href="#" class="footer__bottom-link">AGB</a>
@@ -768,29 +374,21 @@
     </div>
   </footer>
 
-  <!-- ============================================================
-       MODAL: BEITRAG BERECHNEN
-       ============================================================ -->
-  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalSubtitle">
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
     <div class="modal" id="modal">
       <div class="modal__header">
         <div class="modal__header-text">
           <h2 class="modal__title" id="modalTitle">Beitrag berechnen</h2>
-          <p class="modal__subtitle" id="modalSubtitle">Erhalten Sie Ihr persönliches Angebot in Sekunden</p>
+          <p class="modal__subtitle">Erhalten Sie Ihr persönliches Angebot in Sekunden</p>
         </div>
-        <button class="modal__close" onclick="closeModal()" aria-label="Schliessen">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <line x1="18" y1="6" x2="6" y2="18"/>
-            <line x1="6" y1="6" x2="18" y2="18"/>
-          </svg>
-        </button>
+        <button class="modal__close" onclick="closeModal()" aria-label="Schliessen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
       </div>
-
       <div class="modal__body">
         <form id="calcForm" novalidate>
           <div class="form-group">
             <label class="form-label" for="fahrzeugtyp">Fahrzeugtyp</label>
-            <select class="form-control" id="fahrzeugtyp" required aria-required="true">
+            <select class="form-control" id="fahrzeugtyp" required>
               <option value="" disabled selected>Bitte wählen...</option>
               <option value="pkw">PKW</option>
               <option value="kombi">Kombi</option>
@@ -800,41 +398,27 @@
               <option value="motorrad">Motorrad</option>
             </select>
           </div>
-
           <div class="form-row">
             <div class="form-group">
               <label class="form-label" for="baujahr">Baujahr</label>
-              <select class="form-control" id="baujahr" required aria-required="true">
+              <select class="form-control" id="baujahr" required>
                 <option value="" disabled selected>Jahr...</option>
-                <option value="2024">2024</option>
-                <option value="2023">2023</option>
-                <option value="2022">2022</option>
-                <option value="2021">2021</option>
-                <option value="2020">2020</option>
-                <option value="2019">2019</option>
-                <option value="2018">2018</option>
-                <option value="2017">2017</option>
-                <option value="2016">2016</option>
-                <option value="2015">2015</option>
-                <option value="2010">2010</option>
-                <option value="2005">2005</option>
-                <option value="2000">2000 oder älter</option>
+                <option value="2024">2024</option><option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2010">2010</option><option value="2005">2005</option><option value="2000">2000 oder älter</option>
               </select>
             </div>
             <div class="form-group">
               <label class="form-label" for="plz">Postleitzahl</label>
-              <input type="text" class="form-control" id="plz" placeholder="z. B. 10115" maxlength="5" pattern="[0-9]{5}" inputmode="numeric" required aria-required="true" />
+              <input type="text" class="form-control" id="plz" placeholder="z. B. 10115" maxlength="5" inputmode="numeric" required />
             </div>
           </div>
-
           <div class="form-row">
             <div class="form-group">
               <label class="form-label" for="geburtsdatum">Geburtsdatum (Fahrer)</label>
-              <input type="date" class="form-control" id="geburtsdatum" required aria-required="true" />
+              <input type="date" class="form-control" id="geburtsdatum" required />
             </div>
             <div class="form-group">
               <label class="form-label" for="tarif">Gewünschter Tarif</label>
-              <select class="form-control" id="tarif" required aria-required="true">
+              <select class="form-control" id="tarif" required>
                 <option value="" disabled selected>Tarif...</option>
                 <option value="haftpflicht">Haftpflicht</option>
                 <option value="teilkasko">Teilkasko</option>
@@ -842,30 +426,16 @@
               </select>
             </div>
           </div>
-
-          <!-- Result box -->
           <div class="modal__result" id="modalResult" role="status" aria-live="polite">
             <div class="modal__result-label">Ihr monatlicher Beitrag</div>
             <div class="modal__result-price" id="resultPrice">€ 0,00 <span>/ Monat</span></div>
-            <p class="modal__result-note" id="resultNote">Unverbindliches Angebot. Gültig für 14 Tage. Kein Selbstbehalt bei Haftpflicht.</p>
-            <button type="button" class="btn btn-primary modal__result-cta" onclick="closeModal()">
-              Jetzt direkt abschliessen
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M5 12h14M12 5l7 7-7 7"/>
-              </svg>
-            </button>
+            <p class="modal__result-note" id="resultNote">Unverbindliches Angebot.</p>
+            <button type="button" class="btn btn-primary modal__result-cta" onclick="closeModal()">Jetzt direkt abschliessen <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
           </div>
         </form>
       </div>
-
       <div class="modal__footer">
-        <button type="button" class="btn btn-primary" onclick="calculateBeitrag()">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="12" cy="12" r="10"/>
-            <path d="M12 8v4l3 3"/>
-          </svg>
-          Beitrag berechnen
-        </button>
+        <button type="button" class="btn btn-primary" onclick="calculateBeitrag()"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>Beitrag berechnen</button>
       </div>
     </div>
   </div>
